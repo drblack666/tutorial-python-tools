@@ -9,7 +9,3 @@ def test_small_1():
 
 def test_small_negative():
     assert isPrime(-7) == True
-
-def test_small_21():
-    time.sleep(2)
-    assert isPrime(21) == False
