@@ -1,8 +1,13 @@
 def isPrime(number):
-    if number%2 == 0:
+    if (number==1):
         return False
-    return True
-
+    elif (number==2):
+        return True;
+    else:
+        for x in range(2,number):
+            if(number % x==0):
+                return False
+        return True
 
 def test_small_2():
     assert isPrime(2) == False
